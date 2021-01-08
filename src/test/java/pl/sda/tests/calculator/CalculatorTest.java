@@ -35,8 +35,6 @@ public class CalculatorTest {
     @Test
     public void shouldThrowExceptionWhenOperationWithGivenTypeIsNotFound() {
         //expect
-        Assertions.assertThrows(NoSuchElementException.class, () -> {
-            sut.calculate(OperationType.SUBTRACTION, 2, 3);
-        });
+        Assertions.assertThrows(NoSuchElementException.class, () -> sut.calculate(OperationType.SUBTRACTION, 2, 3));
     }
 }
