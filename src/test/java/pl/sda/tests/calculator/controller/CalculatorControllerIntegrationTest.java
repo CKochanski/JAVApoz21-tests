@@ -27,6 +27,6 @@ public class CalculatorControllerIntegrationTest {
 
         //then
         assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(response.getBody(), "Result: 3");
+        assertEquals("Result: 3", response.getBody());
     }
 }

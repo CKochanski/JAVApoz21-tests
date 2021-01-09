@@ -1,5 +1,5 @@
 package pl.sda.tests.calculator.operation;
 
 public enum OperationType {
-    ADDITION, SUBTRACTION
+    ADDITION, SUBTRACTION, MULTIPLICATION
 }

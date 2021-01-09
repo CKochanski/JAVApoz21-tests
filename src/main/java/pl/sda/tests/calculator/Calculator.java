@@ -16,7 +16,10 @@ public class Calculator {
     }
 
     public String calculate(OperationType operationType, int arg1, int arg2) {
-        Operation requestedOperation = operations.stream().filter(operation -> operation.supportedType() == operationType).findAny().orElseThrow();
+        Operation requestedOperation = operations.stream()
+                .filter(operation -> operation.supportedType() == operationType)
+                .findAny()
+                .orElseThrow();
         return "Result: " + requestedOperation.calculate(arg1, arg2);
     }
 }
